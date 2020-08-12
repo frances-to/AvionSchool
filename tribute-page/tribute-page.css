@@ -1,0 +1,74 @@
+body {
+    background-color: #ffffff;
+    font-family: 'Chivo', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 2% 0;
+}
+
+.title-description {
+    padding: 2% 0;
+}
+
+.name {
+    font-weight: 700;
+    color: #4092B1;
+    font-size: 32px;
+    text-align: center;
+    margin: 0;
+}
+
+.description {
+    font-size: 16px;
+    color: #626262;
+    text-align: center;
+}
+
+.caption {
+    font-size: 16px;
+    color: #626262;
+    text-align: center;
+    display: block;
+    margin: 16px 0px;
+}
+
+.photo-section {
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+}
+
+img {
+    max-width: 500px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.timeline-life {
+    margin: 0 auto;
+    padding: 2% 30%;
+}
+
+.timeline {
+    font-size: 24px;
+    color: #4092B1;
+    text-align: center;
+}
+
+.events {
+    font-size: 16px;
+    color: #333333;
+    line-height: 1.6;
+    margin-bottom: 24px;
+}
+
+.info {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: #4092B1;
+}
+
+

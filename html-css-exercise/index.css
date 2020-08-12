@@ -1,0 +1,11 @@
+#body-class {
+    padding: 40px;
+}
+
+.class {
+    color: red;
+}
+
+#id {
+    color: blue;
+}
