@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            font-family: 'Work Sans', sans-serif; 
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            background: #1CD8D2;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #93EDC7, #1CD8D2);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #93EDC7, #1CD8D2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 8px;
+            margin: 80px auto;
+            padding: 48px 64px;
+            max-width: 500px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            
+        }
+
+        label {
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+
+        input {
+            margin-bottom: 24px;
+            padding: 16px 16px;
+            border-radius: 4px;
+            border-style: none;
+            font-size: 16px;
+        }
+
+        .text {
+            border: 1px #C9D1D7 solid; 
+        }
+
+        .button {
+            color: white;
+            background-color: #090E12;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="card">
+        <form id="form" action="message.html">
+            <label for="name">First Name</label>
+            <input type="text" id="name" name="first-name" placeholder="Please enter your name" class="text" required="required">
+            <label for="name">Last Name</label>
+            <input type="text" id="name" name="last-name" placeholder="Please enter your last name" class="text" required="required">
+            <input type="submit" value="Submit" class="button" data-action = "submit">
+        </form>
+    </div>
+
+    <script src = "level2.js"></script>
+</body>
+</html>

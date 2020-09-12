@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            font-family: 'Work Sans', sans-serif; 
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            background: #1CD8D2;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #93EDC7, #1CD8D2);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #93EDC7, #1CD8D2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 8px;
+            margin: 80px auto;
+            padding: 48px 64px;
+            max-width: 500px;
+            font-size: 24px;
+        }
+
+        .label {
+            font-size: 18px;
+            margin-bottom: 8px;
+        }
+
+        span {
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="label">
+            <span>First Name:</span>
+            <label class="first-name"></label> 
+        </div>
+        <div class="label">
+            <span>Last Name</span>
+            <label class="last-name"></label> 
+        </div>
+    </div>
+
+    <script>
+        const urlParams = new URLSearchParams(location.search);
+        const firstName = document.querySelector(".first-name")
+        const lastName = document.querySelector(".last-name")
+        for (const [key, value] of urlParams) {
+          if (key == "first-name") firstName.innerHTML = value 
+          if (key == "last-name") lastName.innerHTML = value 
+        }
+      </script>
+    </body>
+</body>
+</html>
